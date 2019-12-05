@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="14550"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="ice five chess x" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="ice five chess x" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About ice five chess x" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide ice five chess x" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit ice five chess x" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                                    <items>
+                                        <menuItem title="ice five chess x Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                            <connections>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="-247"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="ice five chess x" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <touchBar key="touchBar" id="6ZY-nV-j76">
+                        <touchBarItems>
+                            <touchBarItem id="BVa-gM-aPe">
+                                <viewController key="viewController" id="vHe-H0-SPE">
+                                    <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qX4-Yd-O5b">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="19"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="[R]重新开始restart   [Space]撤销withdraw" id="9ev-ya-QdL">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </viewController>
+                                <size key="designTimeSize" width="286" height="19"/>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="szZ-dU-1DX"/>
+                            <touchBarItem id="fyS-uS-rGg">
+                                <viewController key="viewController" id="7iX-wD-eNN">
+                                    <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zsL-D6-PDe">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="19"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="ice five chess x 🐠🐠  @Tropical fish" id="nOs-C1-MNw">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </viewController>
+                                <size key="designTimeSize" width="246" height="19"/>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="15"/>
+        </scene>
+        <!--ice five chess x-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController title="ice five chess x" id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="900" height="850"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="UuY-06-oVj">
+                                <rect key="frame" x="19" y="461" width="63" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="3oX-yk-wy8"/>
+                                    <constraint firstAttribute="width" constant="63" id="YMV-f5-m7d"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="【Space】" bezelStyle="shadowlessSquare" image="icons8-undo" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="GKw-tK-oDc">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="contentTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="undo_act:" target="XfG-lQ-9wD" id="7zW-RN-2k6"/>
+                                </connections>
+                            </button>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YLu-ff-Ywb">
+                                <rect key="frame" x="223" y="807" width="322" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="QFK-1D-K0W">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="⭐️⭐️⭐️" width="105"/>
+                                        <segment label="⭐️⭐️" width="105" selected="YES" tag="1"/>
+                                        <segment label="⭐️" width="104"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="diff_change:" target="XfG-lQ-9wD" id="be3-r0-hOS"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WeM-jm-077">
+                                <rect key="frame" x="17" y="807" width="167" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="9Av-Bg-dPr">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="黑棋" width="80"/>
+                                        <segment label="白棋" width="80" selected="YES" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="player_chess_change:" target="XfG-lQ-9wD" id="Cp9-Yd-6Q2"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mqr-w9-wlQ">
+                                <rect key="frame" x="565" y="807" width="290" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="CH0-bt-jkh">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="禁手关闭" width="142"/>
+                                        <segment label="禁手开启" width="141" selected="YES" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="ban_choice_change:" target="XfG-lQ-9wD" id="LrV-Yz-mZo"/>
+                                </connections>
+                            </segmentedControl>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="6WC-go-W8U">
+                                <rect key="frame" x="0.0" y="790" width="900" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="900" id="mOF-Ih-Ryn"/>
+                                </constraints>
+                            </box>
+                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="teV-lj-UcQ">
+                                <rect key="frame" x="89" y="0.0" width="5" height="793"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="793" id="RDe-iP-J58"/>
+                                </constraints>
+                            </box>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="kNB-9w-lme">
+                                <rect key="frame" x="19" y="279" width="64" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="Oi3-OO-SAj"/>
+                                    <constraint firstAttribute="width" constant="64" id="S6l-Rc-jZ6"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="【E】" bezelStyle="shadowlessSquare" image="icons8-invisible" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uKy-eG-pnF">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="contentTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="helping_predict:" target="XfG-lQ-9wD" id="xTz-dX-dpk"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GrK-RF-dc1">
+                                <rect key="frame" x="90" y="739" width="812" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b4S-BH-ifw"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="7VG-6O-bUH">
+                                    <font key="font" metaFont="systemThin" size="22"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="HSP-1G-lfL">
+                                <rect key="frame" x="19" y="646" width="64" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="UV3-2c-4BQ"/>
+                                    <constraint firstAttribute="height" constant="85" id="qGJ-8T-vXr"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="【R】" bezelStyle="shadowlessSquare" image="icons8-restart" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rS6-j1-PCr">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="contentTintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="clear_btn_act:" target="XfG-lQ-9wD" id="M5j-HS-fgO"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="odR-2z-nrY">
+                                <rect key="frame" x="139" y="44" width="714" height="713"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" drawsBackground="YES" id="fFw-td-YwA">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7HW-2j-3BU">
+                                <rect key="frame" x="18" y="833" width="4" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="9j9-Xv-roQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Djc-8N-vJU">
+                                <rect key="frame" x="837" y="773" width="16" height="16"/>
+                            </progressIndicator>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="odR-2z-nrY" firstAttribute="top" secondItem="GrK-RF-dc1" secondAttribute="bottom" constant="-18" id="1Gt-7h-g85"/>
+                            <constraint firstItem="HSP-1G-lfL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="19" id="6cY-Bz-c7j"/>
+                            <constraint firstAttribute="trailing" secondItem="GrK-RF-dc1" secondAttribute="trailing" id="9LG-vr-wDn"/>
+                            <constraint firstItem="6WC-go-W8U" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="57" id="9jw-sb-1PN"/>
+                            <constraint firstItem="odR-2z-nrY" firstAttribute="leading" secondItem="teV-lj-UcQ" secondAttribute="trailing" constant="47" id="CVu-L1-KBk"/>
+                            <constraint firstItem="Djc-8N-vJU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="61" id="ESt-d8-thU"/>
+                            <constraint firstItem="UuY-06-oVj" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="19" id="F9V-qT-VdS"/>
+                            <constraint firstItem="YLu-ff-Ywb" firstAttribute="leading" secondItem="WeM-jm-077" secondAttribute="trailing" constant="43" id="Hfl-H0-9Mi"/>
+                            <constraint firstItem="kNB-9w-lme" firstAttribute="leading" secondItem="UuY-06-oVj" secondAttribute="leading" id="OIY-wO-kto"/>
+                            <constraint firstAttribute="trailing" secondItem="odR-2z-nrY" secondAttribute="trailing" constant="47" id="PKn-dX-8Es"/>
+                            <constraint firstItem="mqr-w9-wlQ" firstAttribute="leading" secondItem="YLu-ff-Ywb" secondAttribute="trailing" constant="24" id="Sgg-RP-Ms8"/>
+                            <constraint firstAttribute="bottom" secondItem="teV-lj-UcQ" secondAttribute="bottom" id="aLN-lq-Ndl"/>
+                            <constraint firstItem="kNB-9w-lme" firstAttribute="top" secondItem="UuY-06-oVj" secondAttribute="bottom" constant="91" id="c6W-Kr-qWK"/>
+                            <constraint firstItem="6WC-go-W8U" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" id="cWj-T2-QxQ"/>
+                            <constraint firstItem="GrK-RF-dc1" firstAttribute="top" secondItem="6WC-go-W8U" secondAttribute="bottom" constant="3" id="dEH-Vz-sQU"/>
+                            <constraint firstItem="UuY-06-oVj" firstAttribute="top" secondItem="HSP-1G-lfL" secondAttribute="bottom" constant="104" id="dWF-sN-qs1"/>
+                            <constraint firstItem="YLu-ff-Ywb" firstAttribute="baseline" secondItem="mqr-w9-wlQ" secondAttribute="baseline" id="fLf-qx-BKE"/>
+                            <constraint firstItem="GrK-RF-dc1" firstAttribute="leading" secondItem="teV-lj-UcQ" secondAttribute="trailing" id="mwd-6W-c3T"/>
+                            <constraint firstItem="YLu-ff-Ywb" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="-66" id="nzf-1k-dnf"/>
+                            <constraint firstItem="Djc-8N-vJU" firstAttribute="leading" secondItem="YLu-ff-Ywb" secondAttribute="trailing" constant="294" id="oCf-zb-Dfi"/>
+                            <constraint firstItem="teV-lj-UcQ" firstAttribute="top" secondItem="6WC-go-W8U" secondAttribute="bottom" constant="-1" id="oP4-89-3FL"/>
+                            <constraint firstItem="WeM-jm-077" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="oXh-PI-MI5"/>
+                            <constraint firstItem="6WC-go-W8U" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="oyS-a0-c48"/>
+                            <constraint firstItem="HSP-1G-lfL" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="119" id="pbP-w6-iwP"/>
+                            <constraint firstItem="teV-lj-UcQ" firstAttribute="leading" secondItem="HSP-1G-lfL" secondAttribute="trailing" constant="8" id="uoa-NJ-tkF"/>
+                            <constraint firstAttribute="bottom" secondItem="odR-2z-nrY" secondAttribute="bottom" constant="44" id="vgv-nX-Q1Z"/>
+                            <constraint firstItem="WeM-jm-077" firstAttribute="baseline" secondItem="YLu-ff-Ywb" secondAttribute="baseline" id="xJr-ga-HwF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ban_choice" destination="mqr-w9-wlQ" id="qgX-Ob-owp"/>
+                        <outlet property="db_texter" destination="GrK-RF-dc1" id="NHX-6e-rk3"/>
+                        <outlet property="difficulty_choice_seg" destination="YLu-ff-Ywb" id="86e-1F-ata"/>
+                        <outlet property="player_choice_seg" destination="WeM-jm-077" id="Bbq-mA-7KP"/>
+                        <outlet property="rotater" destination="Djc-8N-vJU" id="dBy-IH-0O9"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="812"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-invisible" width="101" height="101"/>
+        <image name="icons8-restart" width="101" height="101"/>
+        <image name="icons8-undo" width="101" height="101"/>
+    </resources>
+</document>
