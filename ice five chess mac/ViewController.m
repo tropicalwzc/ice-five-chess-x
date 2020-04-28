@@ -23,7 +23,7 @@
 {
     keyer=0;
     ScreenWidth=900;
-    ScreenHeight=800;
+    ScreenHeight=770;
     int smal=0;
     if(ScreenWidth>ScreenHeight)
         smal=ScreenHeight;
@@ -355,7 +355,7 @@
     
     CGRect position=CGRectMake(0, 0, 0, 0);
     if(chess_map[x][y]==nil)
-        position=CGRectMake(x*perwidth+(ScreenWidth-15*perwidth)/2+perwidth, ScreenHeight/2+(y-7.5)*perheight, perwidth,perheight);
+        position=CGRectMake(x*perwidth+(ScreenWidth-15*perwidth)/2+perwidth*0.5, ScreenHeight/2+(y-8.5)*perheight, perwidth,perheight);
     
     chess_map[x][y]=[self AddBlockBtn:chess_map[x][y] frame:position action:@selector(focus_click:) val:val blockrow:x blockcol:y Backgroundcolor:background_color TitleColor:title_color];
     
